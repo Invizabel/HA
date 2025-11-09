@@ -1,1 +1,1 @@
-http://kodi.arpa:8080/jsonrpc?request={"jsonrpc": "2.0","id": 1,"method": "Addons.ExecuteAddon","params": {"addonid": "game.libretro.mgba","params": ["/storage/ROMS/GB/demo.gb"],"wait": True}}
+{"jsonrpc": "2.0", "id": 1, "method": "Addons.ExecuteAddon", "params": {"addonid": "game.libretro.mgba", "params": ["/storage/ROMS/GB/demo.gb"], "wait": true}}
