@@ -1,4 +1,4 @@
-import urllib.parse
+import json
 
 url = "http://kodi.arpa:8080/jsonrpc?request="
 
@@ -15,4 +15,4 @@ payload = {
     }
 }
 
-print(urllib.parse.urlencode(payload))
+print(json.dumps(payload))
