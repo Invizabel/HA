@@ -1,4 +1,3 @@
-import requests
 import urllib.parse
 
 url = "http://kodi.arpa:8080/jsonrpc?request="
