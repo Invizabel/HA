@@ -1,10 +1,9 @@
 import requests
-import json
 import urllib.parse
 
 url = "http://kodi.arpa:8080/jsonrpc?request="
 
-rom_path = "/storage/ROMS/GB/Kirby_s Dream Land.gb"
+rom_path = "/storage/ROMS/GB/demo.gb"
 
 payload = {
     "jsonrpc": "2.0",
@@ -18,5 +17,3 @@ payload = {
 }
 
 print(urllib.parse.urlencode(payload))
-
-
