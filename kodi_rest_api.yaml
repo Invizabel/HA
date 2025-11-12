@@ -1,0 +1,30 @@
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+rest_command:
+  run_kirbys_dream_land:
+    url: "http://kodi.arpa:8080/jsonrpc?request="
+    method: "post"
+    payload: '{"jsonrpc": "2.0", "id": 1, "method": "Addons.ExecuteAddon", "params": {"addonid": "game.libretro.mgba", "params": ["/storage/ROMS/GB/Kirby_s Dream Land.gb"], "wait": true}}'
+    content_type: "application/json"
+  
+  run_kirbys_dream_land_2:
+    url: "http://kodi.arpa:8080/jsonrpc?request="
+    method: "post"
+    payload: '{"jsonrpc": "2.0", "id": 1, "method": "Addons.ExecuteAddon", "params": {"addonid": "game.libretro.mgba", "params": ["/storage/ROMS/GB/Kirby_s Dream Land 2.gb"], "wait": true}}'
+    content_type: "application/json"
+  
+  run_mario_kart_super_circuit:
+    url: "http://kodi.arpa:8080/jsonrpc?request="
+    method: "post"
+    payload: '{"jsonrpc": "2.0", "id": 1, "method": "Addons.ExecuteAddon", "params": {"addonid": "game.libretro.mgba", "params": ["/storage/ROMS/GBA/Mario Kart Super Circuit.gba"], "wait": true}}'
+    content_type: "application/json"
+    
